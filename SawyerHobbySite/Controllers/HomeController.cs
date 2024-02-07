@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using SawyerHobbySite.Models;
 using System.Diagnostics;
 
 namespace SawyerHobbySite.Controllers
@@ -17,11 +16,9 @@ namespace SawyerHobbySite.Controllers
         {
             return View();
         }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Hobby()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
     }
 }
