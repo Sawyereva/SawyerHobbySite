@@ -16,7 +16,7 @@ namespace SawyerHobbySite.Controllers
         {
             return View();
         }
-        public IActionResult Hobby()
+        public IActionResult Calculator()
         {
             return View();
         }

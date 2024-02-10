@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Calculator";
+}
+
+<section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Tutoring</span>
+                        <span class="section-heading-lower">Look into tutoring costs here. </span>
+                    </h2>
+                    <p class="mb-0">Please enter your information below, and a cost will be calculated. </p>
+                    <form>
+                    <label>Hours Desired:</label>
+                    <input id="intHours"/>
+                    <br />
+                    <label>Hourly Rate</label>
+                    <input type="text" value=25 id="intPay" readonly>
+                    <br />
+                    <br />
+                    <input type="button" value="Calculate" id = "calculateButton" />
+                    <br />
+                    <input type="text" value="" id="totalPay">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -24,7 +24,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Hobby">My Hobby</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Calculator">Tutoring</a>
                         </li>
                     </ul>
                 </div>
@@ -43,14 +43,15 @@
     <br />
     <br />
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - SawyerHobbySite - <!-- <a asp-area="" asp-controller="Home" asp-action="Info">Info</a> -->
-            <p>This site was created by Sawyer Evans on Feb 7, 2024. The information is somewhat true. </p>
+        <div>
+            &copy; 2024 - SawyerHobbySite - This site was created by Sawyer Evans on Feb 7, 2024. The information is somewhat true.
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/js/site.js"></script>
+
 </body>
 </html>
