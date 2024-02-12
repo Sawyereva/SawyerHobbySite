@@ -6,21 +6,20 @@
 
 $("#calculateButton").click( function(){
     // Get the values from the input fields
-    var hours = parseFloat($("#intHours").val());
-    var payRate = 25
+    hours = $("#intHours").val();
 
     // Check if values are valid numbers
-    if (isNaN(hours) || isNaN(payRate)) {
+    if (isNaN(hours)) {
         alert("Please enter valid numbers for hours and pay rate.");
         return;
     }
     if (hours <=0) {
-        alert("Please enter valid number for hours and pay rate.");
+        alert("Please enter positive number");
         return;
     }
     // Calculate the total pay
-    var totalPay = hours * payRate;
+    totalPay = hours * 25;
 
     // Display the result in a designated element
-    $("#totalPay").text(totalPay); 
+    $("#totalPay").val("$" + totalPay); 
 });
